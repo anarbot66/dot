@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    font-family: 'SF Pro Text';
+}
+
+/* Скрываем скроллбар в WebKit-браузерах (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Скрываем в Firefox */
+  body {
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE 10+ */
+  }
+  
+  /* Если нужно ограничить именно ваш контейнер */
+  #root, .AppContainer {
+    overflow: auto;             /* включаем прокрутку */
+    scrollbar-width: none;      /* Firefox */
+  }
+  
+  #root::-webkit-scrollbar, 
+  .AppContainer::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+  
+  
