@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import TaskBarImage from '../assets/image 8.png';
 
+
 export default function ProjectPage() {
   // Стили контейнеров
   const container = {
@@ -63,7 +64,7 @@ export default function ProjectPage() {
     fontWeight: 400,
     lineHeight: '20px',
   };
-  const btn = (bg = 'linear-gradient(180deg, #212124 0%, #1D1D1F 100%)') => ({
+  const btn = (bg = '#1D1D1F') => ({
     width: 212,
     padding: '15px 25px',
     background: bg,
@@ -114,7 +115,7 @@ export default function ProjectPage() {
         >
           <div style={inner(42, 50)}>
             <div style={frame771}>
-              <div style={title64}>simple is a key</div>
+              <div style={title64}>просто</div>
               <div style={text20}>
                 Задачи, цели, заметки, документы.<br/>
                 Ничего лишнего.
@@ -148,7 +149,7 @@ export default function ProjectPage() {
         >
           <div style={inner(42, 50)}>
             <div style={frame771}>
-              <div style={title64}>taskbar</div>
+              <div style={title64}>панель задач</div>
               <div style={text20}>Удобная и простая панель задач, все под рукой.</div>
             </div>
             <motion.img
@@ -175,7 +176,7 @@ export default function ProjectPage() {
         >
           <div style={inner(42, 50)}>
             <div style={frame771}>
-              <div style={title64}>local</div>
+              <div style={title64}>локально</div>
               <div style={text20}>Данные хранятся только у вас. Никаких утечек.</div>
             </div>
           </div>
@@ -201,7 +202,7 @@ export default function ProjectPage() {
           <div style={{
             width: 190,
             padding: '20px 45px',
-            background: 'linear-gradient(180deg, black 0%, #040404 100%)',
+            background: '#1D1D1F',
             borderRadius: 40,
             display: 'flex',
             justifyContent: 'center',

@@ -8,8 +8,8 @@ const navbarStyle = {
   transform: 'translateX(-50%)',
   zIndex: 1000,
   height: 63,
-  width: 370,
-  background: 'linear-gradient(180deg, #212124 0%, #1D1D1F 100%)',
+  width: 530,
+  background: '#1D1D1F',
   borderRadius: 50,
   display: 'inline-flex',
   gap: 30,
@@ -32,11 +32,13 @@ const linkStyle = ({ isActive }) => ({
 export default function Navbar() {
   return (
     <nav style={navbarStyle}>
-      <NavLink to="/" style={linkStyle}>Зачем</NavLink>
+      <NavLink to="/" style={linkStyle}>#WEAREDOT</NavLink>
       <span style={{ color: '#505050', fontSize: 20 }}>/</span>
       <NavLink to="/project" style={linkStyle}>Проект</NavLink>
       <span style={{ color: '#505050', fontSize: 20 }}>/</span>
       <NavLink to="/team" style={linkStyle}>Команда</NavLink>
+      <span style={{ color: '#505050', fontSize: 20 }}>/</span>
+      <NavLink to="/news" style={linkStyle}>Новости</NavLink>
     </nav>
   );
 }

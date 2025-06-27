@@ -6,6 +6,8 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import TeamPage from './pages/TeamPage';
+import NewsPage from './pages/NewsPage';
+import './styles.css';
 
 export default function App() {
   return (
@@ -18,6 +20,7 @@ export default function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/project" element={<ProjectPage />} />
               <Route path="/team" element={<TeamPage />} />
+              <Route path="/news" element={<NewsPage />} />
             </Routes>
           </div>
         </div>

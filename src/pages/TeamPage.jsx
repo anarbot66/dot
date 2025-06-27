@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+
 export default function TeamPage() {
   // Стили
   const container = {
@@ -46,7 +47,7 @@ export default function TeamPage() {
     wordWrap: 'break-word',
   };
   // bg по умолчанию — градиент
-  const btn = (bg = 'linear-gradient(180deg, #212124 0%, #1D1D1F 100%)') => ({
+  const btn = (bg = '#1D1D1F') => ({
     width: 212,
     padding: '15px 25px',
     background: bg,

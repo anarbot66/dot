@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import '../styles.css';
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -60,12 +61,12 @@ export default function HomePage() {
     height: 234,
     paddingLeft: 400,
     paddingRight: 400,
-    background: 'linear-gradient(180deg, black 0%, #1D1D1F 100%)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'center',
     gap: 10,
+    
   };
   const frame777 = {
     width: 429,
@@ -73,7 +74,6 @@ export default function HomePage() {
     paddingRight: 45,
     paddingTop: 30,
     paddingBottom: 30,
-    background: 'black',
     overflow: 'hidden',
     borderRadius: 40,
     display: 'inline-flex',
@@ -88,7 +88,7 @@ export default function HomePage() {
     flexDirection: 'column',
     justifyContent: 'center',
     color: 'white',
-    fontSize: 24,
+    fontSize: 18,
     fontFamily: 'SF Pro Text',
     fontWeight: 600,
     lineHeight: '24px',
@@ -121,8 +121,7 @@ export default function HomePage() {
         >
           <div style={frame771}>
             <div style={titleStyle}>
-              Просто оптимизируйте<br/>
-              каждый свой день
+              #WEAREDOT
             </div>
           </div>
         </motion.div>
